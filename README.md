@@ -2,6 +2,8 @@
 
 Web implementation of a this [chess engine](https://github.com/Skripkon/chess-engine)
 
+You can try this game [here](https://setday.github.io/chess-engine-online/)
+
 ## Setup:
 
 To run this project you should make this steps:
