@@ -1,0 +1,38 @@
+.board {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px;
+}
+
+.board .html-layer {
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.board .html-layer div {
+    position: absolute;
+    top: 30%;
+    left: 1rem;
+    right: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    font-size: 30px;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.gm-label {
+    position: relative;
+    top: -10px;
+
+    background-color: #7d1e1d;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+
+    font-size: 10px;
+}
+
+a {
+    color: #b58863;
+}
