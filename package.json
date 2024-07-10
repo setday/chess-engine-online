@@ -1,0 +1,20 @@
+{
+  "name": "chess-bot-online",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chess bot online",
+  "scripts": {
+    "start": "webpack --mode=development --config webpack.config.js",
+    "build": "webpack --mode=production --config webpack.config.js"
+  },
+  "dependencies": {
+    "chess.js": "^1.0.0-beta.8",
+    "cm-chessboard": "^8.7.4",
+    "lodash": "^4.17.21",
+    "onnxruntime-web": "^1.18.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
