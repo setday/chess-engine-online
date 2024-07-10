@@ -5,7 +5,8 @@
   "description": "Chess bot online",
   "scripts": {
     "start": "webpack --mode=development --config webpack.config.js",
-    "build": "webpack --mode=production --config webpack.config.js"
+    "build": "webpack --mode=production --config webpack.config.js",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "chess.js": "^1.0.0-beta.8",
@@ -14,6 +15,7 @@
     "onnxruntime-web": "^1.18.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4"
   }
