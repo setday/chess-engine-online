@@ -40,6 +40,12 @@ span {
     font-weight: bold;
 }
 
+.modelLoading {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
 .overlay {
     position: fixed;
     top: 0;

@@ -6,10 +6,14 @@ import * as chessboardJSArrows from 'cm-chessboard/src/extensions/arrows/Arrows'
 
 import * as nn from './nn_functions';
 
-const model = null
+const modelLoadingSpan = document.getElementById("modelLoading");
+
+let model = null
+modelLoadingSpan.classList.toggle("hidden", false);
 nn.loadModel("./../models/TORCH_100EPOCHS.onnx").then(m => {
   console.log("Model loaded");
   model = m;
+  modelLoadingSpan.classList.toggle("hidden", true);
 });
 
 let autoPlay = false;
@@ -76,7 +80,7 @@ async function makeEngineMove(chessboard) {
     while (model === null) {
       await new Promise(resolve => setTimeout(resolve, 1000));
     }
-    
+
     const prediction = await nn.predictMoves(chess, model);
     const predictionPossible = prediction.filter(move => possibleMovesLan.includes(move));
     if (predictionPossible.length > 0) {
