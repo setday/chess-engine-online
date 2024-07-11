@@ -1,6 +1,8 @@
 # chess-engine-online
 
-Web implementation of a this [chess engine](https://github.com/Skripkon/chess-engine)
+Web implementation of this [chess engine](https://github.com/Skripkon/chess-engine)
+
+This project uses ONNX model instead of PyTorch model to make possible running the engine on the web. Although the model operates on the CPU since utilizeing CUDA cores for acceleration on the web is not feasible the performance remains sufficiently high to ensure an enjoyable gaming experience.
 
 You can try this game [here](https://setday.github.io/chess-engine-online/)
 
@@ -11,7 +13,7 @@ To run this project you should make this steps:
 1. Clone this repository
 2. Add your models (`.pth` files of PyTorch models) to the `models` folder
 3. Install all requirements with `pip install -r requirements.txt` in utils folder
-4. Run the script `python convertTrch2Onnx.py` to convert the models to `.onnx` format (which is essential for running model in the web) 
+4. Run the script `python convertTrch2Onnx.py` to convert the models to `.onnx` format
 
 ## Running the project:
 
