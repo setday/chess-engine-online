@@ -1,6 +1,6 @@
 // import * as ort from 'onnxruntime-web';
 
-import movesToInts from '../models/heavy_move_to_int.json';
+import movesToInts from '../models/heavy_move_to_int_imot.json';
 
 export async function loadModel(path) {
     const session = new onnx.InferenceSession();

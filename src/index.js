@@ -10,9 +10,17 @@ const modelLoadingSpan = document.getElementById("modelLoading");
 
 let model = null
 modelLoadingSpan.classList.toggle("hidden", false);
-nn.loadModel("./../models/TORCH_100EPOCHS.onnx").then(m => {
+nn.loadModel("./../models/TORCH_100EPOCHS_imot.onnx").then(m => {
   console.log("Model loaded");
   model = m;
+
+  // Log model details (if available)
+  if (model.name) {
+    console.log("Model Name:", model.name);
+  } else {
+    console.log("Model loaded, but no name property found.");
+  }
+
   modelLoadingSpan.classList.toggle("hidden", true);
 });
 
