@@ -10,7 +10,7 @@ const modelLoadingSpan = document.getElementById("modelLoading");
 
 let model = null
 modelLoadingSpan.classList.toggle("hidden", false);
-nn.loadModel("./../models/TORCH_100EPOCHS.onnx").then(m => {
+nn.loadModel("./../models/TORCH_100EPOCHS_imot.onnx").then(m => {
   console.log("Model loaded");
   model = m;
   modelLoadingSpan.classList.toggle("hidden", true);
